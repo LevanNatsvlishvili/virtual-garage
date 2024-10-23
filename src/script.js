@@ -1,9 +1,9 @@
 import * as THREE from 'three';
 import { PointerLockControls } from 'three/addons/controls/PointerLockControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import GUI from 'lil-gui';
+// import GUI from 'lil-gui';
 
-const gui = new GUI();
+// const gui = new GUI();
 
 // Scene where everything will be rendered
 const scene = new THREE.Scene();
@@ -118,30 +118,30 @@ cars.forEach((carModel, index) => {
     carGroup.add(car);
 
     // Add GUI controls for car transformation
-    gui
-      .add(car.position, 'x')
-      .min(-10)
-      .max(10)
-      .step(0.1)
-      .name(carModel.name + ' Position X');
-    gui
-      .add(car.position, 'y')
-      .min(-10)
-      .max(10)
-      .step(0.1)
-      .name(carModel.name + ' Position Y');
-    gui
-      .add(car.position, 'z')
-      .min(-10)
-      .max(10)
-      .step(0.1)
-      .name(carModel.name + ' Position Z');
-    gui
-      .add(car.rotation, 'y')
-      .min(-Math.PI)
-      .max(Math.PI)
-      .step(0.1)
-      .name(carModel.name + ' Rotation Y');
+    // gui
+    //   .add(car.position, 'x')
+    //   .min(-10)
+    //   .max(10)
+    //   .step(0.1)
+    //   .name(carModel.name + ' Position X');
+    // gui
+    //   .add(car.position, 'y')
+    //   .min(-10)
+    //   .max(10)
+    //   .step(0.1)
+    //   .name(carModel.name + ' Position Y');
+    // gui
+    //   .add(car.position, 'z')
+    //   .min(-10)
+    //   .max(10)
+    //   .step(0.1)
+    //   .name(carModel.name + ' Position Z');
+    // gui
+    //   .add(car.rotation, 'y')
+    //   .min(-Math.PI)
+    //   .max(Math.PI)
+    //   .step(0.1)
+    //   .name(carModel.name + ' Rotation Y');
   });
 });
 

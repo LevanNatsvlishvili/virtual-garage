@@ -1,10 +1,10 @@
 # Three.js Journey
 
-## Setup
-Download [Node.js](https://nodejs.org/en/download/).
-Run this followed commands:
+## How to Move
 
-``` bash
+Click on the screen, and use AWSD keys to move around
+
+```bash
 # Install dependencies (only the first time)
 npm install
 
